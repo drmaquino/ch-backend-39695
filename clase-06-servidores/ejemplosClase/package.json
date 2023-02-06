@@ -1,0 +1,16 @@
+{
+  "name": "ejemplosclase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejemploExpress.js",
+  "scripts": {
+    "start": "node ejemploExpress.js",
+    "test": "nodemon ejemploExpress.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
