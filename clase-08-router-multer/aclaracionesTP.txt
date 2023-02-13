@@ -1,0 +1,30 @@
+FileManager {
+    guardar
+    recuperarPorId
+    actualizarPorId
+    borrarPorId
+}
+
+const prodManager = new FileManager('./database/productos.json')
+const cartManager = new FileManager('./database/carritos.json')
+
+Product {
+    pid: 1,
+    ...
+    ...
+    thumbnails: ['...']
+}
+
+Carrito {
+    cid: 1,
+    products: [
+        {
+            pid: 1,
+            quantity: 6
+        },
+        {
+            pid: 4,
+            quantity: 1
+        }
+    ]
+}
