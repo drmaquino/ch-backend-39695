@@ -1,0 +1,3 @@
+function saludar() {
+    alert('hola')
+}

@@ -1,0 +1,13 @@
+<H1>Usuarios</H1>
+{{#if hayUsuarios}}
+<ul>
+  {{#each usuarios}}
+  <li>Nombre: {{this.nombre}}</li>
+  {{/each}}
+</ul>
+{{else}}
+<h3>no hay usuarios para mostrar</h3>
+{{/if}}
+
+<button onclick="saludar()">saludar</button>
+<script src="/static/js/users.js"></script>
