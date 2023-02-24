@@ -1,0 +1,8 @@
+<h1>Productos</h1>
+{{#if hayProductos }}
+<ul>
+    {{#each productos}}
+    <li>{{this.nombre}}: ${{this.precio}}</li>
+    {{/each}}
+</ul>
+{{/if}}
