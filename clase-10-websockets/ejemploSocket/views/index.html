@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/socket.io/socket.io.js"></script>
+  <title>SocketIO</title>
+</head>
+
+<body>
+  <h1>probando sockets!</h1>
+
+  nombre: <input type="text"><br>
+
+  <button id="btnSocket">enviar por socket</button>
+  <button id="btnPost">enviar por post</button>
+
+  <h3>nombres que ya salieron</h3>
+  <div id="contenido"></div>
+
+  <script>
+    const socket = io()
+
+    socket.on('actualizar', data => {
+      console.log('actualizando!', data)
+      document.getElementById('contenido').innerHTML = `<ul><li>${data}</li></ul>`
+    })
+
+    document.querySelector('#btnSocket').addEventListener('click', e => {
+      const nombre = document.querySelector('input').value
+      socket.emit('nombre', {
+        nombre
+      })
+    })
+
+    document.querySelector('#btnPost').addEventListener('click', e => {
+      const nombre = document.querySelector('input').value
+      fetch('/socket', {
+        method: "POST",
+        body: JSON.stringify({
+          nombre
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      }).then(res => res.text()).then(console.log)
+    })
+  </script>
+</body>
+
+</html>
