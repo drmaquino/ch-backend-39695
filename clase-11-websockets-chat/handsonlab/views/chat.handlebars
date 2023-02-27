@@ -1,0 +1,13 @@
+<h1>Chat</h1>
+
+<h4>Nuevo mensaje</h4>
+alias: <input disabled id="inputAlias" type="text">
+mensaje: <input id="inputMensaje" type="text">
+<button id="btnNuevoMsg">Enviar</button>
+
+<h4>Historial</h4>
+<div id="messages"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="/js/chat.js"></script>
