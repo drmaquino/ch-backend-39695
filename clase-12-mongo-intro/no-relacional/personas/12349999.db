@@ -1,0 +1,12 @@
+nombre: 'pepe'
+edad: 37
+apellido: perez
+direccion:
+    calle: 'rivadavia'
+    numero: 1234
+    cp: 1150
+telefonos: [
+    cod_pais: '+54'
+    area: '011'
+    numero: '123456789'
+]

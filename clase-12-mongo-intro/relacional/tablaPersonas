@@ -1,0 +1,27 @@
+// Persona {
+//     dni: '88345678',
+//     nombre: 'marian',
+//     edad: 37,
+//     direccion: 1,
+// }
+
+// Persona {
+//     dni: '12349999',
+//     nombre: 'pepe',
+//     edad: 37,
+//     direccion: 2,
+// }
+
+// Persona {
+//     dni: '64564564',
+//     nombre: 'juana',
+//     edad: 37,
+//     direccion: 2,
+
+
+
+// Persona
+dni             nombre      edad    direccion
+'88345678'     'marian', 37, 1,
+    '12349999'     'pepe', 37, 2,
+        '64564564'     'juana', 37, 2,

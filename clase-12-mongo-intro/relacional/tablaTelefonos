@@ -1,0 +1,20 @@
+Telefono {
+    dniPersona: '88345678',
+        cod_pais: '+54'
+    area: '011',
+        numero: '123456789'
+}
+
+Telefono {
+    dniPersona: '88345678',
+        cod_pais: '+54'
+    area: '011',
+        numero: '88888888'
+}
+
+Telefono {
+    dniPersona: '12349999
+    cod_pais: '+54'
+    area: '011',
+        numero: '123456789'
+}

@@ -1,0 +1,54 @@
+[
+    Persona {
+        dni: '88345678',
+        nombre: 'marian',
+        edad: 37,
+        direccion: {
+            calle: 'rivadavia',
+            numero: 1234,
+            cp: 1150
+        },
+        telefonos: [
+            {
+                cod_pais: '+54'
+                area: '011',
+                numero: '123456789'
+            }
+        ]
+    },
+    Persona {
+        dni: '12349999',
+        nombre: 'pepe',
+        edad: 37,
+        direccion: {
+            calle: 'rivadavia',
+            numero: 1234,
+            cp: 1150
+        },
+        telefonos: [
+            {
+                cod_pais: '+54'
+                area: '011',
+                numero: '123456789'
+            }
+        ]
+    },
+        Persona {
+        dni: '64564564',
+        nombre: 'juana',
+        edad: 37,
+        direccion: {
+            calle: 'rivadavia',
+            numero: 1234,
+            cp: 1150
+        },
+        telefonos: [
+            {
+                cod_pais: '+54'
+                area: '011',
+                numero: '123456780'
+            }
+        ]
+    }
+
+]
