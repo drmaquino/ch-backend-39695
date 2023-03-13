@@ -1,0 +1,10 @@
+<h1>Pacientes</h1>
+{{#if hayPacientes }}
+<ul>
+    {{#each pacientes}}
+    <li>{{this.apellido}}, {{this.nombre}} ({{this.edad}} años, dni {{this.dni}})</li>
+    {{/each}}
+</ul>
+{{else}}
+no hay pacientes para mostrar
+{{/if}}
